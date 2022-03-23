@@ -1,10 +1,10 @@
 package co.com.sofka.app.calculator;
 
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.runners.Parameterized;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -27,23 +27,21 @@ public class BasicCalculatorTest {
                 () -> first + " + " + second + " should equal " + expectedResult);
     }
 
+    // SUMAR
     public void sum(){
 
-        // ARRANGE
         Long number1 = 1L;
         Long number2 = 1L;
 
         Long expectedValue = 2L;
 
-        // ACT Invocación del método a probar con los valores previamente inicializados
         Long result = basicCalculator.sum(number1, number2);
 
-        //Assert (Verifica si el valor obtenido por el método antes de ejecutado es el esperado
         assertEquals(expectedValue, result);
     }
 
     @Test
-    //Método restar
+    // RESTAR
     public void subs(){
 
         // ARRANGE
@@ -60,7 +58,7 @@ public class BasicCalculatorTest {
     }
 
     @Test
-    //Método para multiplicar
+    // MULTIPLICAR
     public void mult(){
 
         // ARRANGE
@@ -77,7 +75,7 @@ public class BasicCalculatorTest {
     }
 
     @Test
-    // Método para dividir
+    // DIVIDIR
     public void div(){
 
         // ARRANGE

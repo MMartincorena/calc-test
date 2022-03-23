@@ -26,7 +26,7 @@ public class BasicCalculator {
     public Long div(Long number1, Long number2){
         logger.info("Dividing {} / {}", number1, number2);
         if(number2==0){
-            throw new IllegalArgumentException("No se puede dividir entre cero");
+            throw new IllegalArgumentException("No se puede dividir entre cero (resulado = infinito)");
         }
         return number1 + number2;
     }
